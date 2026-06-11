@@ -12,7 +12,7 @@ about:
   icon: https://avatars.githubusercontent.com/u/94471909?v=4
 source:
   project: https://github.com/elevenlabs/elevenlabs-mcp
-  commit: 882533daf11a0c53a2ef79c04fbcd012ac965bcf
+  commit: 81bf4a6f12d729aa927a64e3ecbfd2e2fd0e41b7
 run:
   volumes:
     - "{{elevenlabs.data}}:/root/Desktop"
