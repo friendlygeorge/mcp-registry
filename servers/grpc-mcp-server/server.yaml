@@ -1,0 +1,31 @@
+name: grpc-mcp-server
+image: mcp/grpc-mcp-server
+type: server
+meta:
+  category: developer-tools
+  tags:
+    - grpc
+    - developer-tools
+    - api
+    - microservices
+    - kubernetes
+about:
+  title: Grpc
+  description: MCP server for gRPC service discovery via server reflection, method invocation, and type schema inspection. Connect to any gRPC endpoint, discover services automatically, invoke RPC methods with JSON requests, and inspect service descriptors — all without needing proto files.
+  icon: https://www.google.com/s2/favicons?domain=github.com&sz=64
+source:
+  project: https://github.com/friendlygeorge/grpc-mcp-server
+  branch: main
+  commit: d16215df24c8ef4f60deb26fa9711ae2de2b3333
+config:
+  description: Configure the gRPC endpoint connection
+  env:
+    - name: GRPC_ENDPOINT
+      example: localhost:50051
+      description: Target gRPC endpoint (optional — use connect_endpoint tool instead)
+    - name: GRPC_TIMEOUT_MS
+      example: "10000"
+      description: Request timeout in milliseconds
+    - name: GRPC_USE_TLS
+      example: "false"
+      description: Enable TLS connections
